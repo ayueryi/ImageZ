@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows7.0</TargetFramework>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <ApplicationIcon>Assets\ImageZ.ico</ApplicationIcon>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Assets\ImageZ.ico" />
+      <None Remove="Assets\ImageZ.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="Assets\ImageZ.ico" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="WPF-UI" Version="3.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="Assets\ImageZ.ico" />
+      <Resource Include="Assets\ImageZ.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Resources\" />
+    </ItemGroup>
+
+</Project>
