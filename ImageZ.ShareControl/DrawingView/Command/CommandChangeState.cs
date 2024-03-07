@@ -7,7 +7,7 @@ public class CommandChangeState : CommandBase
         throw new NotImplementedException();
     }
 
-    public override void Redu()
+    public override void Redo()
     {
         throw new NotImplementedException();
     }
